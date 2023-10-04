@@ -5,6 +5,6 @@ module.exports = {
     entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'dist/'),
-        filename: 'lenguaje-layout.bundle.js',
+        filename: '@soyoswaldo.com/2l.js',
       },
   };

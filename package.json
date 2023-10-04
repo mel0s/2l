@@ -1,18 +1,17 @@
 {
-  "name": "2l",
+  "name": "@soyoswaldo.com/2l",
   "version": "1.0.0",
-  "description": "Lenguaje-Layout",
+  "description": "2l",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mel0s/2l.git"
+    "url": "git+https://github.com/mel0s/2l.git"
   },
   "exports": {
-    "require": "./dist/lenguaje-layout.cjs",
-    "default": "./dist/lenguaje-layout.modern.js"
+    "require": "./dist/2l.cjs",
+    "default": "./dist/2l.modern.js"
   },
-  "private": true,
-  "umd:main": "dist/lenguaje-layout.umd.js",
-  "module": "dist/lenguaje-layout.m.js",
+  "umd:main": "dist/2l.umd.js",
+  "module": "dist/2l.m.js",
   "source": "index.js",
   "license": "MIT",
   "bugs": {
