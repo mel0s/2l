@@ -1,6 +1,6 @@
 const layout = require('../src/Layout');
 let cad =
-  `<tabla1>|^e ,^l10,^di,^$^<Cuenta >|^e ,^l10,^di,^$^<cuentaAbono>|^e ,^l10,^di,^$^<cuentaAbono>
+  `<tabla1>|^e ,^l10,^dd,^$^<Cuenta >|^e ,^l10,^di,^$^<cuentaAbono>|^e ,^l10,^di,^$^<cuentaAbono>
   <tabla1>|^e ,^l100,^di,^$^#columna1|^e ,^l10,^di,^$^#columna2|^e ,^l10,^di,^$^#columna3|^e ,^l10,^di,^$^#columna4
   <tabla2>|^e ,^l50,^di,^$^c2#perro+^#gato+^<lomito>||$^#perro
   <tabla3>|^e ,^l50,^di,^$^c2#perro+^#gato+^<lomito>||$^#perro`;
