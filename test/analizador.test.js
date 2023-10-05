@@ -21,7 +21,7 @@ let datos = {
         columna7: "Referencia",
         columna7: "Forma Aplicacion",
         
-    }
+    },
 ],
   tabla2: [
     {

@@ -10,13 +10,13 @@ Los datos puedes ser obtenidos de un  json que cuenta con los  datos base para l
 De la comunidad para la comunidad
 
 ~~~
-  npm install l-fact
+  npm i @soyoswaldo.com/2l
 ~~~
 
 ### Ejemplo
 
 ```
-import { Layout } from "l-fact";
+import { Layout } from "@soyoswaldo.com/2l";
 
 ...
 ...
