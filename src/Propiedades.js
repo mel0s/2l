@@ -82,4 +82,4 @@ class Propiedades {
   }
 }
 
-module.exports = Propiedades;
+export default Propiedades;

@@ -5,7 +5,7 @@ class Columna {
 
   /**
    * Constructor con el string de configuracion
-   * @param {Strign} - Codigo de confiduracion
+   * @param {String} - Codigo de confiduracion
    */
   constructor(cad) {
     this.programacion = cad;
@@ -159,4 +159,4 @@ class Columna {
   }
 }
 
-module.exports = Columna;
+export default Columna;

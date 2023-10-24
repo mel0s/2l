@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: './index.js',
+    entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist/'),
-        filename: '@soyoswaldo.com/2l.js',
+        path: path.resolve(__dirname, 'dist/@soyoswaldo.com/'),
+        filename: '2l-min.js',
       },
   };

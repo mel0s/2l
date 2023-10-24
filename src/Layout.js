@@ -1,4 +1,5 @@
-const LayoutToken = require('./LayoutToken');
+import  LayoutToken from './LayoutToken';
+
 class Layout {
   /**
    * Inicializa el analisis del codigo fuente.
@@ -177,4 +178,4 @@ class Layout {
 
 }
 
-module.exports = Layout;
+export default  Layout;
