@@ -17,7 +17,6 @@ class Layout {
       else{
         throw new SyntaxError("El codigo fuente no fue creado o asignado al constructor Layout");
       }
-
       
     } 
     catch (error) {
@@ -71,6 +70,7 @@ class Layout {
       let tabla = tablas[i];
       let configuracion = this.layoutToken.tokenColumna[cont];
       let t = datos[tabla];
+      
       if (t) {
         cadenaLayout += this.generarSeccion(t, configuracion);
       }

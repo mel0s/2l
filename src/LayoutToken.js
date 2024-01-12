@@ -1,6 +1,7 @@
 //
 import Propiedades from './Propiedades';
 import Columna from './Columna';
+import TablaSecciones from './TablaSecciones';
 
 /**
  *  Genera el proceso de analisis del codigo layout.
@@ -25,7 +26,8 @@ class LayoutToken {
     this.tablas = [];
     // Obtiene las propiedades de configuiracion de una columna.
     this.propiedadesCol = new Propiedades();
-
+    // Datos con la configuracion de las secciones
+    this.propiedadesSecciones = [];
     // Datos de la columna.
     this.columna = new Columna(cad);
 
@@ -43,11 +45,8 @@ class LayoutToken {
 
 
     if(this.registros.length == 0 ){
-      throw new SyntaxError("No existen secciones configuradas; El salto de linea indica el final de la configuracion de una seccion  ");
-      return;
+      throw new SyntaxError("No existen secciones configuradas; El salto de linea indica el final de la configuracion de una seccion.");
     }    
-
-
 
     this.registros.forEach((e, i) => {
       if (e) {
@@ -58,8 +57,6 @@ class LayoutToken {
         this.registros.splice(i, 1);
       }
     });
-
-    
 
     return this.registros;
   }
@@ -109,10 +106,14 @@ class LayoutToken {
       let columna = columnas[i];
 
       if (columna[0]) {
-        let con = columna[0].match(/[<]{1}[^<\^>]*[>]{1}/gm);
-        if (con) {
-          con = con[0];
-          this.tablas.push(con.substring(1, con.length - 1));
+
+        let tokenSeccionTabla = TablaSecciones.obtenerTokenTabla(columna[0]);
+
+        let nombreTablaSeccion = TablaSecciones.obtenerNombreTablaYSeccion(tokenSeccionTabla);
+
+        if (nombreTablaSeccion.tabla) {
+          this.propiedadesSecciones.push(nombreTablaSeccion);
+          this.tablas.push(nombreTablaSeccion.tabla);
         }
         else {
           this.tablas.push('###404Columna');
