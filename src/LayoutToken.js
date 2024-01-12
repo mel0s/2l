@@ -1,6 +1,6 @@
 //
-const Propiedades = require('./Propiedades');
-const Columna = require('./Columna');
+import Propiedades from './Propiedades';
+import Columna from './Columna';
 
 /**
  *  Genera el proceso de analisis del codigo layout.
@@ -143,4 +143,4 @@ class LayoutToken {
 
 }
 
-module.exports = LayoutToken;
+export default  LayoutToken;

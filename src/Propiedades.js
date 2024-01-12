@@ -34,7 +34,7 @@ class Propiedades {
    */
   direccion(tokens) {
 
-    let t = tokens.find(e => /^\^d[*^]/.test(e));
+    let t = tokens.find(e => /^\^d[i|d]$/.test(e));
 
     if (t == "^di") {
       return {
@@ -82,4 +82,4 @@ class Propiedades {
   }
 }
 
-module.exports = Propiedades;
+export default Propiedades;
