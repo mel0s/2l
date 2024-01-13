@@ -1,1 +1,1 @@
-export { Layout }  from "./src";
+export { Layout, LayoutToken }  from "./src";
